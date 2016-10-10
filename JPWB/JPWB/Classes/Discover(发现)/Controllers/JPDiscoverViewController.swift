@@ -8,7 +8,7 @@
 
 import UIKit
 
-class JPDiscoverViewController: UIViewController {
+class JPDiscoverViewController: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

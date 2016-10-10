@@ -8,7 +8,7 @@
 
 import UIKit
 
-class JPMessageViewController: UIViewController {
+class JPMessageViewController: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
