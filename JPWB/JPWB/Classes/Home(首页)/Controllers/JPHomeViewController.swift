@@ -8,12 +8,11 @@
 
 import UIKit
 
-class JPHomeViewController: UIViewController {
+class JPHomeViewController: JPBaseViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        vistorView.addRotationAnmation()
     }
 
     override func didReceiveMemoryWarning() {

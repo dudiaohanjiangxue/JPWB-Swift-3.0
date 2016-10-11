@@ -25,10 +25,10 @@
             </objects>
             <point key="canvasLocation" x="-926" y="-610"/>
         </scene>
-        <!--Tab Bar Controller-->
+        <!--Main View Controller-->
         <scene sceneID="xbQ-6L-nWc">
             <objects>
-                <tabBarController id="P8u-6p-d0U" sceneMemberID="viewController">
+                <tabBarController id="P8u-6p-d0U" customClass="JPMainViewController" customModule="JPWB" customModuleProvider="target" sceneMemberID="viewController">
                     <tabBar key="tabBar" contentMode="scaleToFill" id="mPf-xk-926">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>

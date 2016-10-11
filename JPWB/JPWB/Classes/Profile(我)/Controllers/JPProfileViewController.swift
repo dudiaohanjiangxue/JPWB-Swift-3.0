@@ -8,12 +8,12 @@
 
 import UIKit
 
-class JPProfileViewController: UITableViewController {
+class JPProfileViewController: JPBaseViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+         vistorView.setupVisitorViewInfo(iconName: "visitordiscover_image_profile", tipString: "登录后，你的微博、相册、个人资料会显示在这里，展示给别人")
     }
 
     override func didReceiveMemoryWarning() {

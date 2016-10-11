@@ -28,7 +28,7 @@
         <!--首页-->
         <scene sceneID="zDn-6Y-os2">
             <objects>
-                <tableViewController id="fwT-Jk-ytl" sceneMemberID="viewController">
+                <tableViewController id="fwT-Jk-ytl" customClass="JPHomeViewController" customModule="JPWB" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="JLe-PV-uuK">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

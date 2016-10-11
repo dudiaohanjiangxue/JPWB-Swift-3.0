@@ -9,20 +9,73 @@
 import UIKit
 
 class JPMainViewController: UITabBarController {
-
+    
+  //MARK: - 属性
+    
+     fileprivate lazy var imageNames : [String] = ["tabbar_home", "tabbar_message_center", "", "tabbar_discover", "tabbar_profile"]
+    
+    fileprivate lazy var composeBtn: UIButton = {
+        let btn: UIButton = UIButton.init()
+        btn.setImage(UIImage(named: "tabbar_compose_icon_add"), for: UIControlState())
+        btn.setImage(UIImage(named: "tabbar_compose_icon_add_highlighted"), for: UIControlState.highlighted)
+        btn.setBackgroundImage(UIImage(named: "tabbar_compose_button"), for: UIControlState())
+        btn.setBackgroundImage(UIImage(named: "tabbar_compose_button_highlighted"), for: UIControlState.highlighted)
+        btn.sizeToFit()
+       return btn
+    }()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-
+        setupComposeBtn()
+ 
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        adjustItems()
     }
     
     
     
+
+}
+
+
+//MARK: - 设置UI
+extension JPMainViewController {
+    ///调整的tabbar
+    fileprivate func adjustItems() {
+       
+        for i in 0..<tabBar.items!.count {
+            let item = tabBar.items![i]
+            if i == 2 {
+                item.isEnabled = false
+                continue
+            }
+            print(i)
+            item.selectedImage = UIImage(named: imageNames[i] + "_highlighted")
+        }
+    
+    }
+    
+    
+    
+    /// 发布按钮
+    fileprivate func setupComposeBtn() {
+     tabBar.addSubview(self.composeBtn)
+        composeBtn.center = CGPoint(x: tabBar.bounds.width * 0.5, y: tabBar.bounds.height * 0.5)
+        composeBtn.addTarget(self, action: #selector(composeBtnDidClick), for: .touchUpInside)
+    }
+
+}
+
+//MARK: - 点击事件
+extension JPMainViewController {
+ 
+    @objc fileprivate func composeBtnDidClick() {
+    
+       print("点击了发布按钮")
+    }
 
 }
 
