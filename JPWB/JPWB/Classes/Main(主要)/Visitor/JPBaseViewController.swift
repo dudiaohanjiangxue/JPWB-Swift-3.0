@@ -12,7 +12,7 @@ class JPBaseViewController: UITableViewController {
     
     
     lazy var vistorView : JPVisitorView = JPVisitorView.visitorView()
-    var isLogin : Bool = false
+    var isLogin : Bool = true
     
     override func loadView() {
        isLogin ? super.loadView() : setupVisitorView()

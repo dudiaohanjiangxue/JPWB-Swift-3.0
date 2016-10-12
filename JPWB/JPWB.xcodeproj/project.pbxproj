@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4A00A11F1DACDD2500F3E4A4 /* JPModalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A00A11D1DACDD2500F3E4A4 /* JPModalViewController.swift */; };
+		4A00A1201DACDD2500F3E4A4 /* JPModalViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4A00A11E1DACDD2500F3E4A4 /* JPModalViewController.xib */; };
+		4A00A1221DACE05800F3E4A4 /* JPPresentationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A00A1211DACE05800F3E4A4 /* JPPresentationController.swift */; };
 		4A4400111DAB8000006B00C7 /* JPHome.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4A44000F1DAB8000006B00C7 /* JPHome.storyboard */; };
 		4A4400191DAB85A8006B00C7 /* JPMessage.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4A4400171DAB85A8006B00C7 /* JPMessage.storyboard */; };
 		4A44001C1DAB85BE006B00C7 /* JPDiscover.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4A44001A1DAB85BE006B00C7 /* JPDiscover.storyboard */; };
@@ -22,13 +25,19 @@
 		4A44FFE31DAB6344006B00C7 /* JPMessageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A44FFD61DAB6344006B00C7 /* JPMessageViewController.swift */; };
 		4A44FFE41DAB6344006B00C7 /* JPProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A44FFDC1DAB6344006B00C7 /* JPProfileViewController.swift */; };
 		4A44FFE61DAB6357006B00C7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A44FFE51DAB6357006B00C7 /* AppDelegate.swift */; };
+		4A6E7C8A1DACCC9100F330F8 /* JPTitleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A6E7C891DACCC9100F330F8 /* JPTitleButton.swift */; };
+		4A6E7C8C1DACD62800F330F8 /* UiBarButtonItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A6E7C8B1DACD62800F330F8 /* UiBarButtonItem.swift */; };
 		4AE5054F1DAC77EF00CBBB41 /* UIButtonExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AE5054E1DAC77EF00CBBB41 /* UIButtonExtension.swift */; };
 		4AE505521DAC7BE000CBBB41 /* JPBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AE505511DAC7BE000CBBB41 /* JPBaseViewController.swift */; };
 		4AE505541DAC7C6800CBBB41 /* JPVisitorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AE505531DAC7C6800CBBB41 /* JPVisitorView.swift */; };
 		4AE505561DAC7C7400CBBB41 /* JPVisitorView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4AE505551DAC7C7400CBBB41 /* JPVisitorView.xib */; };
+		4AFCC5B31DACF20100531F8F /* JPAnimationor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AFCC5B21DACF20100531F8F /* JPAnimationor.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4A00A11D1DACDD2500F3E4A4 /* JPModalViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JPModalViewController.swift; sourceTree = "<group>"; };
+		4A00A11E1DACDD2500F3E4A4 /* JPModalViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JPModalViewController.xib; sourceTree = "<group>"; };
+		4A00A1211DACE05800F3E4A4 /* JPPresentationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JPPresentationController.swift; sourceTree = "<group>"; };
 		4A4400101DAB8000006B00C7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = JPWB/Base.lproj/JPHome.storyboard; sourceTree = SOURCE_ROOT; };
 		4A4400181DAB85A8006B00C7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = JPWB/Base.lproj/JPMessage.storyboard; sourceTree = SOURCE_ROOT; };
 		4A44001B1DAB85BE006B00C7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = JPWB/Base.lproj/JPDiscover.storyboard; sourceTree = SOURCE_ROOT; };
@@ -46,10 +55,13 @@
 		4A44FFD61DAB6344006B00C7 /* JPMessageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JPMessageViewController.swift; sourceTree = "<group>"; };
 		4A44FFDC1DAB6344006B00C7 /* JPProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JPProfileViewController.swift; sourceTree = "<group>"; };
 		4A44FFE51DAB6357006B00C7 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		4A6E7C891DACCC9100F330F8 /* JPTitleButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JPTitleButton.swift; sourceTree = "<group>"; };
+		4A6E7C8B1DACD62800F330F8 /* UiBarButtonItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UiBarButtonItem.swift; sourceTree = "<group>"; };
 		4AE5054E1DAC77EF00CBBB41 /* UIButtonExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIButtonExtension.swift; sourceTree = "<group>"; };
 		4AE505511DAC7BE000CBBB41 /* JPBaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JPBaseViewController.swift; sourceTree = "<group>"; };
 		4AE505531DAC7C6800CBBB41 /* JPVisitorView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JPVisitorView.swift; sourceTree = "<group>"; };
 		4AE505551DAC7C7400CBBB41 /* JPVisitorView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JPVisitorView.xib; sourceTree = "<group>"; };
+		4AFCC5B21DACF20100531F8F /* JPAnimationor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JPAnimationor.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +75,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4A00A11C1DACDCFA00F3E4A4 /* UIPopover */ = {
+			isa = PBXGroup;
+			children = (
+				4A00A11D1DACDD2500F3E4A4 /* JPModalViewController.swift */,
+				4A00A11E1DACDD2500F3E4A4 /* JPModalViewController.xib */,
+				4A00A1211DACE05800F3E4A4 /* JPPresentationController.swift */,
+				4AFCC5B21DACF20100531F8F /* JPAnimationor.swift */,
+			);
+			path = UIPopover;
+			sourceTree = "<group>";
+		};
 		4A4400201DAB8654006B00C7 /* Compose(发布) */ = {
 			isa = PBXGroup;
 			children = (
@@ -177,6 +200,7 @@
 			isa = PBXGroup;
 			children = (
 				4AE5054E1DAC77EF00CBBB41 /* UIButtonExtension.swift */,
+				4A6E7C8B1DACD62800F330F8 /* UiBarButtonItem.swift */,
 			);
 			path = "Extension(分类)";
 			sourceTree = "<group>";
@@ -184,6 +208,7 @@
 		4A44FFC81DAB6344006B00C7 /* Home(首页) */ = {
 			isa = PBXGroup;
 			children = (
+				4A00A11C1DACDCFA00F3E4A4 /* UIPopover */,
 				4A44FFC91DAB6344006B00C7 /* Controllers */,
 				4A44FFCB1DAB6344006B00C7 /* Models */,
 				4A44FFCC1DAB6344006B00C7 /* Views */,
@@ -210,6 +235,7 @@
 		4A44FFCC1DAB6344006B00C7 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				4A6E7C891DACCC9100F330F8 /* JPTitleButton.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -403,6 +429,7 @@
 				4A44001C1DAB85BE006B00C7 /* JPDiscover.storyboard in Resources */,
 				4A44FFB71DAB631C006B00C7 /* Assets.xcassets in Resources */,
 				4A44FFE21DAB6344006B00C7 /* MainVCSettings.json in Resources */,
+				4A00A1201DACDD2500F3E4A4 /* JPModalViewController.xib in Resources */,
 				4A4400111DAB8000006B00C7 /* JPHome.storyboard in Resources */,
 				4AE505561DAC7C7400CBBB41 /* JPVisitorView.xib in Resources */,
 				4A4400281DAB8699006B00C7 /* JPCompose.storyboard in Resources */,
@@ -420,8 +447,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				4A44FFE61DAB6357006B00C7 /* AppDelegate.swift in Sources */,
+				4AFCC5B31DACF20100531F8F /* JPAnimationor.swift in Sources */,
 				4AE505521DAC7BE000CBBB41 /* JPBaseViewController.swift in Sources */,
+				4A6E7C8A1DACCC9100F330F8 /* JPTitleButton.swift in Sources */,
 				4A44FFDF1DAB6344006B00C7 /* JPDiscoverViewController.swift in Sources */,
+				4A00A1221DACE05800F3E4A4 /* JPPresentationController.swift in Sources */,
+				4A00A11F1DACDD2500F3E4A4 /* JPModalViewController.swift in Sources */,
+				4A6E7C8C1DACD62800F330F8 /* UiBarButtonItem.swift in Sources */,
 				4A44FFE01DAB6344006B00C7 /* JPHomeViewController.swift in Sources */,
 				4A44FFE11DAB6344006B00C7 /* JPMainViewController.swift in Sources */,
 				4AE505541DAC7C6800CBBB41 /* JPVisitorView.swift in Sources */,
