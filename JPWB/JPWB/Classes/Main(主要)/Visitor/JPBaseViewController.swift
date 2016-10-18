@@ -12,7 +12,7 @@ class JPBaseViewController: UITableViewController {
     
     
     lazy var vistorView : JPVisitorView = JPVisitorView.visitorView()
-    var isLogin : Bool = true
+    var isLogin : Bool = false
     
     override func loadView() {
        isLogin ? super.loadView() : setupVisitorView()
@@ -53,5 +53,9 @@ extension JPBaseViewController {
     @objc fileprivate func loginBarItemDidClick() {
         
         print("登录按钮按钮被点击")
+        
+        let oAuthNavVC = UINavigationController(rootViewController: JPOAuthViewController())
+        oAuthNavVC.modalTransitionStyle = .crossDissolve
+        present(oAuthNavVC, animated: true, completion: nil)
     }
 }

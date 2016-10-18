@@ -10,6 +10,7 @@
 		4A00A11F1DACDD2500F3E4A4 /* JPModalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A00A11D1DACDD2500F3E4A4 /* JPModalViewController.swift */; };
 		4A00A1201DACDD2500F3E4A4 /* JPModalViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4A00A11E1DACDD2500F3E4A4 /* JPModalViewController.xib */; };
 		4A00A1221DACE05800F3E4A4 /* JPPresentationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A00A1211DACE05800F3E4A4 /* JPPresentationController.swift */; };
+		4A02B1101DAF5FCF0068B342 /* JPHTTPRequestTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A02B10F1DAF5FCF0068B342 /* JPHTTPRequestTool.swift */; };
 		4A4400111DAB8000006B00C7 /* JPHome.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4A44000F1DAB8000006B00C7 /* JPHome.storyboard */; };
 		4A4400191DAB85A8006B00C7 /* JPMessage.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4A4400171DAB85A8006B00C7 /* JPMessage.storyboard */; };
 		4A44001C1DAB85BE006B00C7 /* JPDiscover.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4A44001A1DAB85BE006B00C7 /* JPDiscover.storyboard */; };
@@ -25,19 +26,26 @@
 		4A44FFE31DAB6344006B00C7 /* JPMessageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A44FFD61DAB6344006B00C7 /* JPMessageViewController.swift */; };
 		4A44FFE41DAB6344006B00C7 /* JPProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A44FFDC1DAB6344006B00C7 /* JPProfileViewController.swift */; };
 		4A44FFE61DAB6357006B00C7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A44FFE51DAB6357006B00C7 /* AppDelegate.swift */; };
+		4A5B6EF21DB4A8BE008872DC /* JPUserAccount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A5B6EF11DB4A8BE008872DC /* JPUserAccount.swift */; };
 		4A6E7C8A1DACCC9100F330F8 /* JPTitleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A6E7C891DACCC9100F330F8 /* JPTitleButton.swift */; };
 		4A6E7C8C1DACD62800F330F8 /* UiBarButtonItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A6E7C8B1DACD62800F330F8 /* UiBarButtonItem.swift */; };
+		4AA795981DB0BBBA005CCFBC /* JPOAuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AA795961DB0BBBA005CCFBC /* JPOAuthViewController.swift */; };
+		4AA7959B1DB0C5E2005CCFBC /* JPConst.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AA7959A1DB0C5E2005CCFBC /* JPConst.swift */; };
+		4AA7959D1DB0C6EB005CCFBC /* JPGlobalTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AA7959C1DB0C6EB005CCFBC /* JPGlobalTool.swift */; };
 		4AE5054F1DAC77EF00CBBB41 /* UIButtonExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AE5054E1DAC77EF00CBBB41 /* UIButtonExtension.swift */; };
 		4AE505521DAC7BE000CBBB41 /* JPBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AE505511DAC7BE000CBBB41 /* JPBaseViewController.swift */; };
 		4AE505541DAC7C6800CBBB41 /* JPVisitorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AE505531DAC7C6800CBBB41 /* JPVisitorView.swift */; };
 		4AE505561DAC7C7400CBBB41 /* JPVisitorView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4AE505551DAC7C7400CBBB41 /* JPVisitorView.xib */; };
 		4AFCC5B31DACF20100531F8F /* JPAnimationor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AFCC5B21DACF20100531F8F /* JPAnimationor.swift */; };
+		98496AD3B4BFE1BE30CB5F36 /* Pods_JPWB.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28E7BAD53D3923E82A332DD8 /* Pods_JPWB.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		28E7BAD53D3923E82A332DD8 /* Pods_JPWB.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JPWB.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4A00A11D1DACDD2500F3E4A4 /* JPModalViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JPModalViewController.swift; sourceTree = "<group>"; };
 		4A00A11E1DACDD2500F3E4A4 /* JPModalViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JPModalViewController.xib; sourceTree = "<group>"; };
 		4A00A1211DACE05800F3E4A4 /* JPPresentationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JPPresentationController.swift; sourceTree = "<group>"; };
+		4A02B10F1DAF5FCF0068B342 /* JPHTTPRequestTool.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JPHTTPRequestTool.swift; sourceTree = "<group>"; };
 		4A4400101DAB8000006B00C7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = JPWB/Base.lproj/JPHome.storyboard; sourceTree = SOURCE_ROOT; };
 		4A4400181DAB85A8006B00C7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = JPWB/Base.lproj/JPMessage.storyboard; sourceTree = SOURCE_ROOT; };
 		4A44001B1DAB85BE006B00C7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = JPWB/Base.lproj/JPDiscover.storyboard; sourceTree = SOURCE_ROOT; };
@@ -55,13 +63,19 @@
 		4A44FFD61DAB6344006B00C7 /* JPMessageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JPMessageViewController.swift; sourceTree = "<group>"; };
 		4A44FFDC1DAB6344006B00C7 /* JPProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JPProfileViewController.swift; sourceTree = "<group>"; };
 		4A44FFE51DAB6357006B00C7 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		4A5B6EF11DB4A8BE008872DC /* JPUserAccount.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JPUserAccount.swift; sourceTree = "<group>"; };
 		4A6E7C891DACCC9100F330F8 /* JPTitleButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JPTitleButton.swift; sourceTree = "<group>"; };
 		4A6E7C8B1DACD62800F330F8 /* UiBarButtonItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UiBarButtonItem.swift; sourceTree = "<group>"; };
+		4AA795961DB0BBBA005CCFBC /* JPOAuthViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JPOAuthViewController.swift; sourceTree = "<group>"; };
+		4AA7959A1DB0C5E2005CCFBC /* JPConst.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JPConst.swift; sourceTree = "<group>"; };
+		4AA7959C1DB0C6EB005CCFBC /* JPGlobalTool.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JPGlobalTool.swift; sourceTree = "<group>"; };
 		4AE5054E1DAC77EF00CBBB41 /* UIButtonExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIButtonExtension.swift; sourceTree = "<group>"; };
 		4AE505511DAC7BE000CBBB41 /* JPBaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JPBaseViewController.swift; sourceTree = "<group>"; };
 		4AE505531DAC7C6800CBBB41 /* JPVisitorView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JPVisitorView.swift; sourceTree = "<group>"; };
 		4AE505551DAC7C7400CBBB41 /* JPVisitorView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JPVisitorView.xib; sourceTree = "<group>"; };
 		4AFCC5B21DACF20100531F8F /* JPAnimationor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JPAnimationor.swift; sourceTree = "<group>"; };
+		B7FD2A15E1C410C3004962FF /* Pods-JPWB.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JPWB.debug.xcconfig"; path = "Pods/Target Support Files/Pods-JPWB/Pods-JPWB.debug.xcconfig"; sourceTree = "<group>"; };
+		C095449173D69AB137ED9256 /* Pods-JPWB.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JPWB.release.xcconfig"; path = "Pods/Target Support Files/Pods-JPWB/Pods-JPWB.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,12 +83,21 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				98496AD3B4BFE1BE30CB5F36 /* Pods_JPWB.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		083E4FA82CF9F3F5077CBF44 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				28E7BAD53D3923E82A332DD8 /* Pods_JPWB.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		4A00A11C1DACDCFA00F3E4A4 /* UIPopover */ = {
 			isa = PBXGroup;
 			children = (
@@ -84,6 +107,14 @@
 				4AFCC5B21DACF20100531F8F /* JPAnimationor.swift */,
 			);
 			path = UIPopover;
+			sourceTree = "<group>";
+		};
+		4A02B10E1DAF5F990068B342 /* Tools(工具) */ = {
+			isa = PBXGroup;
+			children = (
+				4A02B10F1DAF5FCF0068B342 /* JPHTTPRequestTool.swift */,
+			);
+			path = "Tools(工具)";
 			sourceTree = "<group>";
 		};
 		4A4400201DAB8654006B00C7 /* Compose(发布) */ = {
@@ -123,6 +154,8 @@
 			children = (
 				4A44FFAE1DAB631C006B00C7 /* JPWB */,
 				4A44FFAD1DAB631C006B00C7 /* Products */,
+				62BEEF82AC1ECCA5D594B302 /* Pods */,
+				083E4FA82CF9F3F5077CBF44 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -157,6 +190,7 @@
 				4A44FFC21DAB6344006B00C7 /* Discover(发现) */,
 				4A44FFDA1DAB6344006B00C7 /* Profile(我) */,
 				4A44FFC71DAB6344006B00C7 /* Extension(分类) */,
+				4A02B10E1DAF5F990068B342 /* Tools(工具) */,
 				4A44FFCD1DAB6344006B00C7 /* LIbs(第三方) */,
 				4A44FFD91DAB6344006B00C7 /* Others(其他) */,
 			);
@@ -251,6 +285,7 @@
 			isa = PBXGroup;
 			children = (
 				4AE505501DAC7B9000CBBB41 /* Visitor */,
+				4AA795951DB0BB9D005CCFBC /* OAuth */,
 				4A44FFCF1DAB6344006B00C7 /* Controllers */,
 				4A44FFD21DAB6344006B00C7 /* Models */,
 				4A44FFD31DAB6344006B00C7 /* Views */,
@@ -270,6 +305,7 @@
 		4A44FFD21DAB6344006B00C7 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				4A5B6EF11DB4A8BE008872DC /* JPUserAccount.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -317,6 +353,8 @@
 		4A44FFD91DAB6344006B00C7 /* Others(其他) */ = {
 			isa = PBXGroup;
 			children = (
+				4AA7959A1DB0C5E2005CCFBC /* JPConst.swift */,
+				4AA7959C1DB0C6EB005CCFBC /* JPGlobalTool.swift */,
 			);
 			path = "Others(其他)";
 			sourceTree = "<group>";
@@ -354,6 +392,14 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
+		4AA795951DB0BB9D005CCFBC /* OAuth */ = {
+			isa = PBXGroup;
+			children = (
+				4AA795961DB0BBBA005CCFBC /* JPOAuthViewController.swift */,
+			);
+			path = OAuth;
+			sourceTree = "<group>";
+		};
 		4AE505501DAC7B9000CBBB41 /* Visitor */ = {
 			isa = PBXGroup;
 			children = (
@@ -364,6 +410,15 @@
 			path = Visitor;
 			sourceTree = "<group>";
 		};
+		62BEEF82AC1ECCA5D594B302 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B7FD2A15E1C410C3004962FF /* Pods-JPWB.debug.xcconfig */,
+				C095449173D69AB137ED9256 /* Pods-JPWB.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -371,9 +426,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4A44FFBE1DAB631C006B00C7 /* Build configuration list for PBXNativeTarget "JPWB" */;
 			buildPhases = (
+				869B0C15E68727EEF962D225 /* [CP] Check Pods Manifest.lock */,
 				4A44FFA81DAB631C006B00C7 /* Sources */,
 				4A44FFA91DAB631C006B00C7 /* Frameworks */,
 				4A44FFAA1DAB631C006B00C7 /* Resources */,
+				97413724B95EC5221C896ABB /* [CP] Embed Pods Frameworks */,
+				47723761EDC25B3F4AB7283B /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -441,20 +499,73 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		47723761EDC25B3F4AB7283B /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-JPWB/Pods-JPWB-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		869B0C15E68727EEF962D225 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		97413724B95EC5221C896ABB /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-JPWB/Pods-JPWB-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		4A44FFA81DAB631C006B00C7 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4AA795981DB0BBBA005CCFBC /* JPOAuthViewController.swift in Sources */,
 				4A44FFE61DAB6357006B00C7 /* AppDelegate.swift in Sources */,
+				4A02B1101DAF5FCF0068B342 /* JPHTTPRequestTool.swift in Sources */,
 				4AFCC5B31DACF20100531F8F /* JPAnimationor.swift in Sources */,
 				4AE505521DAC7BE000CBBB41 /* JPBaseViewController.swift in Sources */,
+				4A5B6EF21DB4A8BE008872DC /* JPUserAccount.swift in Sources */,
 				4A6E7C8A1DACCC9100F330F8 /* JPTitleButton.swift in Sources */,
 				4A44FFDF1DAB6344006B00C7 /* JPDiscoverViewController.swift in Sources */,
 				4A00A1221DACE05800F3E4A4 /* JPPresentationController.swift in Sources */,
+				4AA7959D1DB0C6EB005CCFBC /* JPGlobalTool.swift in Sources */,
 				4A00A11F1DACDD2500F3E4A4 /* JPModalViewController.swift in Sources */,
 				4A6E7C8C1DACD62800F330F8 /* UiBarButtonItem.swift in Sources */,
 				4A44FFE01DAB6344006B00C7 /* JPHomeViewController.swift in Sources */,
+				4AA7959B1DB0C5E2005CCFBC /* JPConst.swift in Sources */,
 				4A44FFE11DAB6344006B00C7 /* JPMainViewController.swift in Sources */,
 				4AE505541DAC7C6800CBBB41 /* JPVisitorView.swift in Sources */,
 				4AE5054F1DAC77EF00CBBB41 /* UIButtonExtension.swift in Sources */,
@@ -610,6 +721,7 @@
 		};
 		4A44FFBF1DAB631C006B00C7 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B7FD2A15E1C410C3004962FF /* Pods-JPWB.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -625,6 +737,7 @@
 		};
 		4A44FFC01DAB631C006B00C7 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C095449173D69AB137ED9256 /* Pods-JPWB.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;

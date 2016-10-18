@@ -52,7 +52,7 @@ extension JPMainViewController {
                 item.isEnabled = false
                 continue
             }
-            print(i)
+            
             item.selectedImage = UIImage(named: imageNames[i] + "_highlighted")
         }
     

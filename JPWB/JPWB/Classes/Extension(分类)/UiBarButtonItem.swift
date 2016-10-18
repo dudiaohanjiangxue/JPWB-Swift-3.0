@@ -9,7 +9,7 @@
 import UIKit
 
 extension UIBarButtonItem {
-    convenience init(imageName : String, target : AnyObject?, action : Selector) {
+    convenience init(imageName : String, target : Any?, action : Selector) {
        
         let btn = UIButton(type: .custom)
         btn.setImage(UIImage.init(named: imageName), for: .normal)

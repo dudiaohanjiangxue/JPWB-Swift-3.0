@@ -33,6 +33,7 @@ class JPHomeViewController: JPBaseViewController {
         
         //2.登录的页面
         setupNavigationItem()
+        
     }
 
     override func didReceiveMemoryWarning() {
@@ -68,6 +69,7 @@ extension JPHomeViewController {
     
     @objc fileprivate func rightItemClick() {
         print("rightItemClick")
+        
     }
     
     @objc fileprivate func titleBtnClick(titleBtn : JPTitleButton) {
