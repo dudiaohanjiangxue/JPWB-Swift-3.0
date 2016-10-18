@@ -9,7 +9,7 @@
 import UIKit
 import WebKit
 import NVActivityIndicatorView
-import SwiftyJSON
+
 
 class JPOAuthViewController: UIViewController {
     //MARK: - 懒加载
@@ -119,7 +119,12 @@ extension JPOAuthViewController: WKNavigationDelegate,NVActivityIndicatorViewabl
         let code = urlString.components(separatedBy: "code=").last!
         
         
-        requestToAccessTohen(code: code)
+        JPuserAccountViewModel.shared.requestToAccessTohen(code: code) { (isSuccess) in
+            if isSuccess {
+                UIApplication.shared.keyWindow?.rootViewController = JPWelcomeViewController()
+                
+            }
+        }
       
          decisionHandler(.cancel)
     }
@@ -140,7 +145,7 @@ extension JPOAuthViewController {
         let jsString = "document.getElementById('userId').value='15820723956';document.getElementById('passwd').value='900827chen';"
         oAuthView.evaluateJavaScript(jsString) { (data: Any?, error: Error?) in
             if error == nil {
-             JPLog("填充成功")
+             JPPrint("填充成功")
             
             }
         }
@@ -151,24 +156,6 @@ extension JPOAuthViewController {
 
 //MARK: - 自定义方法
 extension JPOAuthViewController {
-    fileprivate func requestToAccessTohen(code: String) {
-        
-      JPHTTPRequestTool.requestToAccessTohen(code: code) { response in
-        switch response.result {
-        case .success(let value):
-            let json = JSON(value)
-            let userModel = JPUserAccount(dict: value as! [String: Any])
-            JPLog(userModel)
-        case .failure(let error):
-            print(error)
-       
-            
-        }
     
-        
-        }
-        
-        
-    }
-
+    
 }

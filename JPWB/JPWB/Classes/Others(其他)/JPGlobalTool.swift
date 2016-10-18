@@ -14,13 +14,13 @@ class JPGlobalTool: NSObject {
 
 
 
-func JPLog(_ items: Any..., fileName: String = #file, funcName: String = #function, lineNum: Int = #line) {
+func JPPrint(_ items: Any..., fileName: String = #file, funcName: String = #function, lineNum: Int = #line) {
     #if DEBUG
         if items.count == 0 {
-            print(fileName, funcName, lineNum);
+            print((fileName as NSString).lastPathComponent, funcName, lineNum);
         }else {
             
-            print(fileName, funcName, lineNum, items);
+            print((fileName as NSString).lastPathComponent, funcName, lineNum, items);
         }
     #endif
 }

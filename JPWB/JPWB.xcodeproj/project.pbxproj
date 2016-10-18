@@ -11,6 +11,9 @@
 		4A00A1201DACDD2500F3E4A4 /* JPModalViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4A00A11E1DACDD2500F3E4A4 /* JPModalViewController.xib */; };
 		4A00A1221DACE05800F3E4A4 /* JPPresentationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A00A1211DACE05800F3E4A4 /* JPPresentationController.swift */; };
 		4A02B1101DAF5FCF0068B342 /* JPHTTPRequestTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A02B10F1DAF5FCF0068B342 /* JPHTTPRequestTool.swift */; };
+		4A2DB1621DB60BAB00C54019 /* JPuserAccountViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A2DB1611DB60BAB00C54019 /* JPuserAccountViewModel.swift */; };
+		4A2DB1661DB615D200C54019 /* JPWelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A2DB1641DB615D200C54019 /* JPWelcomeViewController.swift */; };
+		4A2DB1671DB615D200C54019 /* JPWelcomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4A2DB1651DB615D200C54019 /* JPWelcomeViewController.xib */; };
 		4A4400111DAB8000006B00C7 /* JPHome.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4A44000F1DAB8000006B00C7 /* JPHome.storyboard */; };
 		4A4400191DAB85A8006B00C7 /* JPMessage.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4A4400171DAB85A8006B00C7 /* JPMessage.storyboard */; };
 		4A44001C1DAB85BE006B00C7 /* JPDiscover.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4A44001A1DAB85BE006B00C7 /* JPDiscover.storyboard */; };
@@ -46,6 +49,9 @@
 		4A00A11E1DACDD2500F3E4A4 /* JPModalViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JPModalViewController.xib; sourceTree = "<group>"; };
 		4A00A1211DACE05800F3E4A4 /* JPPresentationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JPPresentationController.swift; sourceTree = "<group>"; };
 		4A02B10F1DAF5FCF0068B342 /* JPHTTPRequestTool.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JPHTTPRequestTool.swift; sourceTree = "<group>"; };
+		4A2DB1611DB60BAB00C54019 /* JPuserAccountViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JPuserAccountViewModel.swift; sourceTree = "<group>"; };
+		4A2DB1641DB615D200C54019 /* JPWelcomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JPWelcomeViewController.swift; sourceTree = "<group>"; };
+		4A2DB1651DB615D200C54019 /* JPWelcomeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JPWelcomeViewController.xib; sourceTree = "<group>"; };
 		4A4400101DAB8000006B00C7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = JPWB/Base.lproj/JPHome.storyboard; sourceTree = SOURCE_ROOT; };
 		4A4400181DAB85A8006B00C7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = JPWB/Base.lproj/JPMessage.storyboard; sourceTree = SOURCE_ROOT; };
 		4A44001B1DAB85BE006B00C7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = JPWB/Base.lproj/JPDiscover.storyboard; sourceTree = SOURCE_ROOT; };
@@ -115,6 +121,15 @@
 				4A02B10F1DAF5FCF0068B342 /* JPHTTPRequestTool.swift */,
 			);
 			path = "Tools(工具)";
+			sourceTree = "<group>";
+		};
+		4A2DB1631DB615AC00C54019 /* Welcome */ = {
+			isa = PBXGroup;
+			children = (
+				4A2DB1641DB615D200C54019 /* JPWelcomeViewController.swift */,
+				4A2DB1651DB615D200C54019 /* JPWelcomeViewController.xib */,
+			);
+			path = Welcome;
 			sourceTree = "<group>";
 		};
 		4A4400201DAB8654006B00C7 /* Compose(发布) */ = {
@@ -286,6 +301,7 @@
 			children = (
 				4AE505501DAC7B9000CBBB41 /* Visitor */,
 				4AA795951DB0BB9D005CCFBC /* OAuth */,
+				4A2DB1631DB615AC00C54019 /* Welcome */,
 				4A44FFCF1DAB6344006B00C7 /* Controllers */,
 				4A44FFD21DAB6344006B00C7 /* Models */,
 				4A44FFD31DAB6344006B00C7 /* Views */,
@@ -306,6 +322,7 @@
 			isa = PBXGroup;
 			children = (
 				4A5B6EF11DB4A8BE008872DC /* JPUserAccount.swift */,
+				4A2DB1611DB60BAB00C54019 /* JPuserAccountViewModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -492,6 +509,7 @@
 				4AE505561DAC7C7400CBBB41 /* JPVisitorView.xib in Resources */,
 				4A4400281DAB8699006B00C7 /* JPCompose.storyboard in Resources */,
 				4A4400191DAB85A8006B00C7 /* JPMessage.storyboard in Resources */,
+				4A2DB1671DB615D200C54019 /* JPWelcomeViewController.xib in Resources */,
 				4A44001F1DAB85D2006B00C7 /* JPProfile.storyboard in Resources */,
 				4A44FFB51DAB631C006B00C7 /* Main.storyboard in Resources */,
 			);
@@ -569,7 +587,9 @@
 				4A44FFE11DAB6344006B00C7 /* JPMainViewController.swift in Sources */,
 				4AE505541DAC7C6800CBBB41 /* JPVisitorView.swift in Sources */,
 				4AE5054F1DAC77EF00CBBB41 /* UIButtonExtension.swift in Sources */,
+				4A2DB1621DB60BAB00C54019 /* JPuserAccountViewModel.swift in Sources */,
 				4A44FFE41DAB6344006B00C7 /* JPProfileViewController.swift in Sources */,
+				4A2DB1661DB615D200C54019 /* JPWelcomeViewController.swift in Sources */,
 				4A44FFE31DAB6344006B00C7 /* JPMessageViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
