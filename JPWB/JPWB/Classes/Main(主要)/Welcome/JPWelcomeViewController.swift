@@ -22,7 +22,7 @@ class JPWelcomeViewController: UIViewController {
         //动画
         iconViewTopConst.constant = 100
         UIView.animate(withDuration: 3.0, delay: 0, usingSpringWithDamping: 0.6, initialSpringVelocity: 5.0, options: [], animations: {
-            self.view.layoutIfNeeded()
+            self.iconView.layoutIfNeeded()
             }) { (_) in
                 UIApplication.shared.keyWindow?.rootViewController = UIStoryboard(name: "Main", bundle: nil).instantiateInitialViewController()
         }

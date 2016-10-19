@@ -18,4 +18,5 @@ struct OAuthInfo {
 struct JPRequestURLString {
     static let access_token = "https://api.weibo.com/oauth2/access_token"
     static let userInfo = "https://api.weibo.com/2/users/show.json"
+    static let userStatuses = "https://api.weibo.com/2/statuses/friends_timeline.json"
 }

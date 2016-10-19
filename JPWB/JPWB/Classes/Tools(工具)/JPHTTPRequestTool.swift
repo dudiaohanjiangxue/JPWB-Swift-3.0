@@ -28,7 +28,7 @@ class JPHTTPRequestTool: NSObject {
             print(dataRespose.request)
             print(dataRespose.response)
             print(dataRespose.result)
-            print(dataRespose.result.value)
+//            print(dataRespose.result.value)
             print(dataRespose.timeline)
             
             finished(dataRespose.result.value, dataRespose.result.isSuccess)
@@ -54,6 +54,17 @@ extension JPHTTPRequestTool {
         let params = ["access_token": accessToken, "uid": userID]
         
         request(JPRequestURLString.userInfo, method: .get, parameters: params) { (response, isSuccess) in
+            finished(response, isSuccess)
+        }
+    }
+    
+    ///获取用户的微博数据
+    func requestUserStatuses(finished: @escaping finisedCallBack) {
+        guard  let accecc_token = JPuserAccountViewModel.shared.account?.access_token else {
+            return
+        }
+        let params = ["access_token": accecc_token]
+        request(JPRequestURLString.userStatuses, method: .get, parameters: params) { (response, isSuccess) in
             finished(response, isSuccess)
         }
     }

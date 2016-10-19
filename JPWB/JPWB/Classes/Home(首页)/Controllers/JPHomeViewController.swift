@@ -7,9 +7,11 @@
 //
 
 import UIKit
+import SwiftyJSON
 
+private let cellID = "ststusCellID"
 class JPHomeViewController: JPBaseViewController {
-
+    
     //MARK: - 懒加载
     lazy var titleBtn: JPTitleButton = {
         let btn: JPTitleButton = JPTitleButton()
@@ -21,7 +23,10 @@ class JPHomeViewController: JPBaseViewController {
         return btn
     }()
     
+    //MARK: - 属性
     lazy var animationor : JPAnimationor = JPAnimationor()
+    ///数据源
+    lazy var statuses: [JPStatusViewModel] = [JPStatusViewModel]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -33,6 +38,14 @@ class JPHomeViewController: JPBaseViewController {
         
         //2.登录的页面
         setupNavigationItem()
+        
+        //3.加载数据
+        loadStatusesData()
+        
+        //4.tableVIew 的初始设置
+        tableView.separatorStyle = .none
+        tableView.estimatedRowHeight = 300
+        tableView.rowHeight = UITableViewAutomaticDimension
         
     }
 
@@ -88,5 +101,55 @@ extension JPHomeViewController {
         
         self.present(modalVC, animated: true, completion: nil)
     }
+}
+
+//MARK: - 网络数据加载
+extension JPHomeViewController {
+
+    fileprivate func loadStatusesData() {
+        JPHTTPRequestTool.shared.requestUserStatuses { (response, isSuccess) in
+            switch isSuccess {
+            case true :
+                let jsonData = JSON(response)
+                guard let dataArray = jsonData["statuses"].arrayObject as? [[String: Any]] else {
+                    return
+                }
+                
+                for statusDict in dataArray {
+                
+                    let statusModal = JPStatusModal(dict: statusDict)
+                    let statusViewModal = JPStatusViewModel(status: statusModal)
+                    self.statuses.append(statusViewModal)
+                }
+                
+                self.tableView.reloadData()
+                JPPrint(self.statuses[0])
+                break
+            case false:
+                
+                
+                break
+            }
+        }
+        
+    }
+}
+
+//MARK: - tableVIew数据源方法
+extension JPHomeViewController {
+   
+    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return statuses.count
+    }
+    
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        
+        let statusViewModal = statuses[indexPath.row]
+        let cell = tableView.dequeueReusableCell(withIdentifier: cellID) as! JPHomeStatusCell
+         cell.statusViewModal = statusViewModal
+        
+        return cell
+    }
+    
 }
 
