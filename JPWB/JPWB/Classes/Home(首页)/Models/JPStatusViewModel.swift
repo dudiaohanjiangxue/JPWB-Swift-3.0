@@ -74,7 +74,9 @@ class JPStatusViewModel {
          iconUrl = URL(string: urlString)
         
         //配图URl处理
-        if let picUrlDicts = status.pic_urls  {
+        
+        let picUrls = status.pic_urls?.count != 0 ? status.pic_urls : status.retweeted_status?.pic_urls
+        if let picUrlDicts = picUrls {
             for picURLDict in picUrlDicts {
                 let picURLString = picURLDict["thumbnail_pic"] as? String
                 let picURL = URL(string: picURLString ?? "")

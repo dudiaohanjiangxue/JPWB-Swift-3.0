@@ -23,13 +23,22 @@ class JPStatusModal: NSObject {
     var user: JPUser?
     ///配图
     var pic_urls: [[String: Any]]?
+    ///转发的微博
+    var retweeted_status : JPStatusModal?
+    
     //MARK: - init
     init(dict: [String: Any]) {
         super.init()
         setValuesForKeys(dict)
+        //1.将用户字典转为用户模型对象
         if let userDict = dict["user"] as? [String: Any]{
         
            user = JPUser(dict: userDict)
+        }
+        
+        //2.将转发微博字典转为模型对象
+        if let retweetedStatusDict = dict["retweeted_status"] as? [String : Any] {
+            retweeted_status = JPStatusModal(dict: retweetedStatusDict)
         }
     }
  
