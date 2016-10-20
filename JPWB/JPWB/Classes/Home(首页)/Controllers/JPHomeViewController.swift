@@ -8,7 +8,7 @@
 
 import UIKit
 import SwiftyJSON
-
+import Kingfisher
 private let cellID = "ststusCellID"
 class JPHomeViewController: JPBaseViewController {
     
@@ -121,8 +121,9 @@ extension JPHomeViewController {
                     let statusViewModal = JPStatusViewModel(status: statusModal)
                     self.statuses.append(statusViewModal)
                 }
+                self.loadImagesToCache()
                 
-                self.tableView.reloadData()
+               
                 JPPrint(self.statuses[0])
                 break
             case false:
@@ -133,6 +134,25 @@ extension JPHomeViewController {
         }
         
     }
+    
+    private func loadImagesToCache() {
+        
+        let group = DispatchGroup()
+        for statusViewModal in statuses {
+            for imageUrl in statusViewModal.picURLs {
+                group.enter()
+                KingfisherManager.shared.retrieveImage(with: imageUrl, options: nil, progressBlock: nil, completionHandler: nil)
+                group.leave()
+            }
+        }
+        
+        group.notify(queue: DispatchQueue.main) { 
+            JPPrint("刷新表格")
+            self.tableView.reloadData()
+        }
+    
+    }
+    
 }
 
 //MARK: - tableVIew数据源方法

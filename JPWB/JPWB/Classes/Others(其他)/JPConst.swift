@@ -20,3 +20,10 @@ struct JPRequestURLString {
     static let userInfo = "https://api.weibo.com/2/users/show.json"
     static let userStatuses = "https://api.weibo.com/2/statuses/friends_timeline.json"
 }
+
+struct JPHomeConst {
+    
+    static let edgeMargin: CGFloat = 15
+    static let pading: CGFloat = 10
+
+}

@@ -8,7 +8,6 @@
 
 import UIKit
 import Kingfisher
-private let edgeMargin: CGFloat = 15
 
 class JPHomeStatusCell: UITableViewCell {
       //MARK: - 属性
@@ -21,14 +20,19 @@ class JPHomeStatusCell: UITableViewCell {
     @IBOutlet weak var timeLabel: UILabel!
     @IBOutlet weak var sourceLabel: UILabel!
     @IBOutlet weak var contentLabel: UILabel!
+    @IBOutlet weak var pic_collectionView: JPPicCollectionView!
+    @IBOutlet weak var bottomView: UIView!
+    
     @IBOutlet weak var contentLabelWidthConst: NSLayoutConstraint!
+
+    
     
     var statusViewModal: JPStatusViewModel? {
         didSet{
             guard let statusViewModal = statusViewModal else {
                 return
             }
-            
+            //数据赋值
             iconView.kf.setImage(with:statusViewModal.iconUrl)
             verifiedImageView.image = statusViewModal.verifiedImage
             vipView.image = statusViewModal.vipImage
@@ -38,7 +42,10 @@ class JPHomeStatusCell: UITableViewCell {
             contentLabel.text = statusViewModal.status?.text
             
             
-        
+            //collectView的数据源
+            pic_collectionView.picUrls = statusViewModal.picURLs
+            JPPrint(statusViewModal.picURLs)
+            
         }
     
     
@@ -47,7 +54,8 @@ class JPHomeStatusCell: UITableViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        contentLabelWidthConst.constant = UIScreen.main.bounds.width - 2 * edgeMargin
+        contentLabelWidthConst.constant = UIScreen.main.bounds.width - 2 * JPHomeConst.edgeMargin
+        
     }
     
 //    override var frame: CGRect{
@@ -59,4 +67,14 @@ class JPHomeStatusCell: UITableViewCell {
 //    }
 
     
+}
+
+extension JPHomeStatusCell {
+    
+    func cellHeight(statusViewModal: JPStatusViewModel) -> CGFloat {
+        self.statusViewModal = statusViewModal
+        self.layoutIfNeeded()
+        return bottomView.frame.maxY
+    }
+  
 }

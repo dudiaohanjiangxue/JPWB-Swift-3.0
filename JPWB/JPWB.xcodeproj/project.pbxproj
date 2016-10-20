@@ -44,6 +44,7 @@
 		4AE505541DAC7C6800CBBB41 /* JPVisitorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AE505531DAC7C6800CBBB41 /* JPVisitorView.swift */; };
 		4AE505561DAC7C7400CBBB41 /* JPVisitorView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4AE505551DAC7C7400CBBB41 /* JPVisitorView.xib */; };
 		4AF6CAFB1DB766D000DC7AEE /* JPHomeStatusCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AF6CAFA1DB766D000DC7AEE /* JPHomeStatusCell.swift */; };
+		4AF6CAFD1DB859E300DC7AEE /* JPPicCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AF6CAFC1DB859E300DC7AEE /* JPPicCollectionView.swift */; };
 		4AFCC5B31DACF20100531F8F /* JPAnimationor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AFCC5B21DACF20100531F8F /* JPAnimationor.swift */; };
 		98496AD3B4BFE1BE30CB5F36 /* Pods_JPWB.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28E7BAD53D3923E82A332DD8 /* Pods_JPWB.framework */; };
 /* End PBXBuildFile section */
@@ -89,6 +90,7 @@
 		4AE505531DAC7C6800CBBB41 /* JPVisitorView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JPVisitorView.swift; sourceTree = "<group>"; };
 		4AE505551DAC7C7400CBBB41 /* JPVisitorView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JPVisitorView.xib; sourceTree = "<group>"; };
 		4AF6CAFA1DB766D000DC7AEE /* JPHomeStatusCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JPHomeStatusCell.swift; sourceTree = "<group>"; };
+		4AF6CAFC1DB859E300DC7AEE /* JPPicCollectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JPPicCollectionView.swift; sourceTree = "<group>"; };
 		4AFCC5B21DACF20100531F8F /* JPAnimationor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JPAnimationor.swift; sourceTree = "<group>"; };
 		B7FD2A15E1C410C3004962FF /* Pods-JPWB.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JPWB.debug.xcconfig"; path = "Pods/Target Support Files/Pods-JPWB/Pods-JPWB.debug.xcconfig"; sourceTree = "<group>"; };
 		C095449173D69AB137ED9256 /* Pods-JPWB.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JPWB.release.xcconfig"; path = "Pods/Target Support Files/Pods-JPWB/Pods-JPWB.release.xcconfig"; sourceTree = "<group>"; };
@@ -300,6 +302,7 @@
 			children = (
 				4A6E7C891DACCC9100F330F8 /* JPTitleButton.swift */,
 				4AF6CAFA1DB766D000DC7AEE /* JPHomeStatusCell.swift */,
+				4AF6CAFC1DB859E300DC7AEE /* JPPicCollectionView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -600,6 +603,7 @@
 				4A5C74781DB70E5A00ACFAB8 /* JPStatusModal.swift in Sources */,
 				4A6E7C8C1DACD62800F330F8 /* UiBarButtonItem.swift in Sources */,
 				4A44FFE01DAB6344006B00C7 /* JPHomeViewController.swift in Sources */,
+				4AF6CAFD1DB859E300DC7AEE /* JPPicCollectionView.swift in Sources */,
 				4A5C747C1DB7231100ACFAB8 /* JPUser.swift in Sources */,
 				4AA7959B1DB0C5E2005CCFBC /* JPConst.swift in Sources */,
 				4A5C74821DB7549F00ACFAB8 /* JPStatusViewModel.swift in Sources */,

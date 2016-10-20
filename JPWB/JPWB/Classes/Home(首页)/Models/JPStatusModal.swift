@@ -21,7 +21,8 @@ class JPStatusModal: NSObject {
     var source: String? 
     ///user
     var user: JPUser?
-    
+    ///配图
+    var pic_urls: [[String: Any]]?
     //MARK: - init
     init(dict: [String: Any]) {
         super.init()

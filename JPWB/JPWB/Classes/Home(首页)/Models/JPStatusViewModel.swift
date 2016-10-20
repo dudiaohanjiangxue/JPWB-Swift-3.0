@@ -29,6 +29,9 @@ class JPStatusViewModel {
     
     ///头像URL
     var iconUrl : URL?
+    ///这条微博所有配图的URL
+    var picURLs: [URL] = [URL]()
+    
     
     init(status: JPStatusModal) {
         self.status = status
@@ -69,6 +72,15 @@ class JPStatusViewModel {
         //头像URL
         let urlString = status.user?.profile_image_url ?? ""
          iconUrl = URL(string: urlString)
+        
+        //配图URl处理
+        if let picUrlDicts = status.pic_urls  {
+            for picURLDict in picUrlDicts {
+                let picURLString = picURLDict["thumbnail_pic"] as? String
+                let picURL = URL(string: picURLString ?? "")
+                picURLs.append(picURL!)
+            }
+        }
     }
     
     
