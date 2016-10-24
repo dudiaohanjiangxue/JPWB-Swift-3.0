@@ -39,7 +39,7 @@
                                 <rect key="frame" x="0.0" y="92" width="375" height="259"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="UNk-Sk-he3" id="Ql2-xh-aZr">
-                                    <frame key="frameInset" width="375" height="258"/>
+                                    <frame key="frameInset" width="375" height="258.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="avatar_default" translatesAutoresizingMaskIntoConstraints="NO" id="XqC-WK-ClF">
@@ -180,7 +180,6 @@
                                         <constraint firstItem="XqC-WK-ClF" firstAttribute="top" secondItem="Ql2-xh-aZr" secondAttribute="topMargin" constant="15" id="TFl-K4-9EU"/>
                                         <constraint firstItem="7HL-pW-IWy" firstAttribute="bottom" secondItem="XqC-WK-ClF" secondAttribute="bottom" id="UX7-Ba-o23"/>
                                         <constraint firstItem="S5N-eL-dHr" firstAttribute="leading" secondItem="XqC-WK-ClF" secondAttribute="leading" id="Vp1-qE-qRS"/>
-                                        <constraint firstAttribute="bottom" secondItem="5To-R4-794" secondAttribute="bottom" id="ZUU-0e-eqq"/>
                                         <constraint firstItem="fCF-5D-Pky" firstAttribute="top" secondItem="S5N-eL-dHr" secondAttribute="bottom" constant="5" id="bBZ-s8-KdF"/>
                                         <constraint firstItem="5D1-JH-wJW" firstAttribute="leading" secondItem="MqU-Yr-yuQ" secondAttribute="trailing" constant="10" id="bLT-a1-jMf"/>
                                         <constraint firstItem="5To-R4-794" firstAttribute="leading" secondItem="Ql2-xh-aZr" secondAttribute="leading" id="dUw-E0-Bgd"/>

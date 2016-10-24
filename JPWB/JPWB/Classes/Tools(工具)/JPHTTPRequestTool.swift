@@ -59,11 +59,11 @@ extension JPHTTPRequestTool {
     }
     
     ///获取用户的微博数据
-    func requestUserStatuses(finished: @escaping finisedCallBack) {
+    func requestUserStatuses(since_id: Int, max_id: Int, finished: @escaping finisedCallBack) {
         guard  let accecc_token = JPuserAccountViewModel.shared.account?.access_token else {
             return
         }
-        let params = ["access_token": accecc_token]
+        let params = ["access_token": accecc_token, "since_id" : since_id, "max_id" : max_id] as [String : Any]
         request(JPRequestURLString.userStatuses, method: .get, parameters: params) { (response, isSuccess) in
             finished(response, isSuccess)
         }

@@ -45,9 +45,10 @@ class JPHomeStatusCell: UITableViewCell {
             sourceLabel.text = statusViewModal.sourceText
             contentLabel.text = statusViewModal.status?.text
             
-            if let reweeted_status = statusViewModal.status?.retweeted_status {
+            
+            if  statusViewModal.status?.retweeted_status != nil {
                 
-                reweeted_statusContent.text = "@" + (reweeted_status.user?.screen_name)! + ":" + (reweeted_status.text ?? "")
+                reweeted_statusContent.text = "@" + (statusViewModal.status?.retweeted_status?.user?.screen_name)! + ":" + (statusViewModal.status?.retweeted_status?.text ?? "")
                 reweeted_statusCntentLabelTopConst.constant = 15
                 reweeted_statusContent.isHidden = false
             }else {
@@ -60,7 +61,7 @@ class JPHomeStatusCell: UITableViewCell {
             //collectView的数据源
             pic_collectionView.picUrls = statusViewModal.picURLs
 
-            JPPrint(statusViewModal.picURLs)
+            JPPrint(statusViewModal.status?.text)
             
         }
     
