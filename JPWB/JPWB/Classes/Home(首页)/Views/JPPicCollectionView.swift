@@ -14,12 +14,12 @@ class JPPicCollectionView: UICollectionView {
      /**图片的URL*/
     var picUrls: [URL] = [URL](){
         didSet{
-        reloadData()
-        
             //计算图片的collectionView大小
             let (width, height) = calculatePicCollectionSize(count: picUrls.count)
             picViewWidthConst.constant = width
             picViewHeghtConst.constant = height
+            
+            reloadData()
         }
      
     }
@@ -70,32 +70,35 @@ extension JPPicCollectionView {
             return (0, 0)
         }
         
-        
+        let layout = collectionViewLayout as! UICollectionViewFlowLayout
         //2.一张图片
         if count == 1 {
-            guard let image = KingfisherManager.shared.cache.retrieveImageInDiskCache(forKey: picUrls[0].absoluteString) else {
+            let imageKey =  picUrls.last!.absoluteString
+            let diskImage = KingfisherManager.shared.cache.retrieveImageInDiskCache(forKey: imageKey, options: [])//有时候取不出相片
+            guard let image = diskImage else {
+                JPPrint("没有渠道相片\(imageKey)")
                 return (0, 0)
             }
             let imageW = image.size.width * 2
             let imageH = image.size.height * 2
             
-            let layOut = UICollectionViewFlowLayout()
-            layOut.itemSize = CGSize(width: imageW, height: imageH)
-            layOut.minimumLineSpacing = JPHomeConst.pading
-            layOut.minimumInteritemSpacing = JPHomeConst.pading
-            collectionViewLayout = layOut
             
+            layout.itemSize = CGSize(width: imageW, height: imageH)
+            layout.minimumLineSpacing = JPHomeConst.pading
+            layout.minimumInteritemSpacing = JPHomeConst.pading
+            
+            JPPrint(imageW, imageH)
             return (imageW, imageH)
             
         }
         
         
-        let layOut = UICollectionViewFlowLayout()
+        
         let imageWH  = (UIScreen.main.bounds.width - 2 * JPHomeConst.edgeMargin - 2 * JPHomeConst.pading) / 3
-        layOut.itemSize = CGSize(width: imageWH, height: imageWH)
-        layOut.minimumLineSpacing = JPHomeConst.pading
-        layOut.minimumInteritemSpacing = JPHomeConst.pading
-        collectionViewLayout = layOut
+        layout.itemSize = CGSize(width: imageWH, height: imageWH)
+        layout.minimumLineSpacing = JPHomeConst.pading
+        layout.minimumInteritemSpacing = JPHomeConst.pading
+        
         
 //        let imageWH = (UIScreen.main.bounds.width - 2 * JPHomeConst.edgeMargin - 2 * JPHomeConst.pading) / 3
         

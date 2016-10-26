@@ -75,6 +75,9 @@ extension JPMainViewController {
     @objc fileprivate func composeBtnDidClick() {
     
        print("点击了发布按钮")
+        let navComVC = UINavigationController(rootViewController: JPComposeViewController())
+        
+        present(navComVC, animated: true, completion: nil)
     }
 
 }

@@ -36,6 +36,7 @@ class JPHTTPRequestTool: NSObject {
     }
 }
 
+//MARK: - 获取微博和用户的信息
 extension JPHTTPRequestTool {
     
     ///获取授权的AccessToken
@@ -69,5 +70,61 @@ extension JPHTTPRequestTool {
         }
     }
 
+
+}
+
+
+//MARK: - 发布微博
+extension JPHTTPRequestTool {
+     ///发布文字微博
+    func requestToComposeTextStatus(text: String, finished: @escaping finisedCallBack) {
+        guard  let access_token = JPuserAccountViewModel.shared.account?.access_token else {
+            return
+        }
+        let params = ["access_token": access_token, "status" : text]
+        request(JPRequestURLString.composeTextStatus, method: .post, parameters: params) { (response, isSuccess) in
+            finished(response, isSuccess)
+        }
+    }
+    
+    ///发布图片微博
+    func requestToComposeImageStatus(pic: UIImage, text: String, finished: @escaping finisedCallBack) {
+        guard  let access_token = JPuserAccountViewModel.shared.account?.access_token else {
+            return
+        }
+        
+        let params = ["access_token": access_token, "status" : text]
+        
+        
+        Alamofire.upload(multipartFormData: { (MultipartFormData) in
+            for (key, value) in params {
+            MultipartFormData.append(value.data(using: .utf8)!, withName: key)
+            
+            }
+            if let imageData = UIImageJPEGRepresentation(pic, 0.2) {
+                
+//                MultipartFormData.append(imageData, withName: "pic", mimeType: "image/png") 这个方法不行
+                MultipartFormData.append(imageData, withName: "pic", fileName: "123.png", mimeType: "image/png")
+            }
+            }, usingThreshold: SessionManager.multipartFormDataEncodingMemoryThreshold, to: JPRequestURLString.composeImageStatus, method: .post, headers: nil) { (encodingResult) in
+                switch encodingResult {
+                case .success(let upload, _, _):
+                    upload.responseJSON(completionHandler: { (dataRespose) in
+                        print(dataRespose.request)
+                        print(dataRespose.response)
+                        print(dataRespose.result)
+                        print(dataRespose.result.value)
+                        print(dataRespose.timeline)
+                        finished(dataRespose.result.value, dataRespose.result.isSuccess)
+                    })
+                    
+                case .failure(_):
+                    JPPrint("转码失败")
+                    finished(nil, false)
+                }
+        }
+        
+        
+    }
 
 }

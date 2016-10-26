@@ -11,6 +11,10 @@
 		4A00A1201DACDD2500F3E4A4 /* JPModalViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4A00A11E1DACDD2500F3E4A4 /* JPModalViewController.xib */; };
 		4A00A1221DACE05800F3E4A4 /* JPPresentationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A00A1211DACE05800F3E4A4 /* JPPresentationController.swift */; };
 		4A02B1101DAF5FCF0068B342 /* JPHTTPRequestTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A02B10F1DAF5FCF0068B342 /* JPHTTPRequestTool.swift */; };
+		4A09CD951DBDFBBD0039F031 /* JPComposeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A09CD931DBDFBBD0039F031 /* JPComposeViewController.swift */; };
+		4A09CD961DBDFBBD0039F031 /* JPComposeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4A09CD941DBDFBBD0039F031 /* JPComposeViewController.xib */; };
+		4A09CD981DBDFFBF0039F031 /* JPComposeTitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A09CD971DBDFFBF0039F031 /* JPComposeTitleView.swift */; };
+		4A09CD9A1DBE06670039F031 /* JPComposeTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A09CD991DBE06670039F031 /* JPComposeTextView.swift */; };
 		4A2DB1621DB60BAB00C54019 /* JPuserAccountViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A2DB1611DB60BAB00C54019 /* JPuserAccountViewModel.swift */; };
 		4A2DB1661DB615D200C54019 /* JPWelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A2DB1641DB615D200C54019 /* JPWelcomeViewController.swift */; };
 		4A2DB1671DB615D200C54019 /* JPWelcomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4A2DB1651DB615D200C54019 /* JPWelcomeViewController.xib */; };
@@ -39,6 +43,9 @@
 		4AA795981DB0BBBA005CCFBC /* JPOAuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AA795961DB0BBBA005CCFBC /* JPOAuthViewController.swift */; };
 		4AA7959B1DB0C5E2005CCFBC /* JPConst.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AA7959A1DB0C5E2005CCFBC /* JPConst.swift */; };
 		4AA7959D1DB0C6EB005CCFBC /* JPGlobalTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AA7959C1DB0C6EB005CCFBC /* JPGlobalTool.swift */; };
+		4AD4E7B11DBF301400F17023 /* JPPicPickerViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AD4E7AF1DBF301400F17023 /* JPPicPickerViewCell.swift */; };
+		4AD4E7B21DBF301400F17023 /* JPPicPickerViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4AD4E7B01DBF301400F17023 /* JPPicPickerViewCell.xib */; };
+		4AD4E7B41DBF3E6A00F17023 /* JPPicPickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AD4E7B31DBF3E6A00F17023 /* JPPicPickerViewController.swift */; };
 		4AE5054F1DAC77EF00CBBB41 /* UIButtonExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AE5054E1DAC77EF00CBBB41 /* UIButtonExtension.swift */; };
 		4AE505521DAC7BE000CBBB41 /* JPBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AE505511DAC7BE000CBBB41 /* JPBaseViewController.swift */; };
 		4AE505541DAC7C6800CBBB41 /* JPVisitorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AE505531DAC7C6800CBBB41 /* JPVisitorView.swift */; };
@@ -55,6 +62,10 @@
 		4A00A11E1DACDD2500F3E4A4 /* JPModalViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JPModalViewController.xib; sourceTree = "<group>"; };
 		4A00A1211DACE05800F3E4A4 /* JPPresentationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JPPresentationController.swift; sourceTree = "<group>"; };
 		4A02B10F1DAF5FCF0068B342 /* JPHTTPRequestTool.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JPHTTPRequestTool.swift; sourceTree = "<group>"; };
+		4A09CD931DBDFBBD0039F031 /* JPComposeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JPComposeViewController.swift; sourceTree = "<group>"; };
+		4A09CD941DBDFBBD0039F031 /* JPComposeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JPComposeViewController.xib; sourceTree = "<group>"; };
+		4A09CD971DBDFFBF0039F031 /* JPComposeTitleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = JPComposeTitleView.swift; path = ../Controllers/JPComposeTitleView.swift; sourceTree = "<group>"; };
+		4A09CD991DBE06670039F031 /* JPComposeTextView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = JPComposeTextView.swift; path = ../Controllers/JPComposeTextView.swift; sourceTree = "<group>"; };
 		4A2DB1611DB60BAB00C54019 /* JPuserAccountViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JPuserAccountViewModel.swift; sourceTree = "<group>"; };
 		4A2DB1641DB615D200C54019 /* JPWelcomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JPWelcomeViewController.swift; sourceTree = "<group>"; };
 		4A2DB1651DB615D200C54019 /* JPWelcomeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JPWelcomeViewController.xib; sourceTree = "<group>"; };
@@ -85,6 +96,9 @@
 		4AA795961DB0BBBA005CCFBC /* JPOAuthViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JPOAuthViewController.swift; sourceTree = "<group>"; };
 		4AA7959A1DB0C5E2005CCFBC /* JPConst.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JPConst.swift; sourceTree = "<group>"; };
 		4AA7959C1DB0C6EB005CCFBC /* JPGlobalTool.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JPGlobalTool.swift; sourceTree = "<group>"; };
+		4AD4E7AF1DBF301400F17023 /* JPPicPickerViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JPPicPickerViewCell.swift; sourceTree = "<group>"; };
+		4AD4E7B01DBF301400F17023 /* JPPicPickerViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JPPicPickerViewCell.xib; sourceTree = "<group>"; };
+		4AD4E7B31DBF3E6A00F17023 /* JPPicPickerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JPPicPickerViewController.swift; sourceTree = "<group>"; };
 		4AE5054E1DAC77EF00CBBB41 /* UIButtonExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIButtonExtension.swift; sourceTree = "<group>"; };
 		4AE505511DAC7BE000CBBB41 /* JPBaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JPBaseViewController.swift; sourceTree = "<group>"; };
 		4AE505531DAC7C6800CBBB41 /* JPVisitorView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JPVisitorView.swift; sourceTree = "<group>"; };
@@ -158,6 +172,9 @@
 			isa = PBXGroup;
 			children = (
 				4A4400271DAB8699006B00C7 /* JPCompose.storyboard */,
+				4A09CD931DBDFBBD0039F031 /* JPComposeViewController.swift */,
+				4A09CD941DBDFBBD0039F031 /* JPComposeViewController.xib */,
+				4AD4E7B31DBF3E6A00F17023 /* JPPicPickerViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -172,6 +189,10 @@
 		4A4400231DAB8654006B00C7 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				4A09CD971DBDFFBF0039F031 /* JPComposeTitleView.swift */,
+				4A09CD991DBE06670039F031 /* JPComposeTextView.swift */,
+				4AD4E7AF1DBF301400F17023 /* JPPicPickerViewCell.swift */,
+				4AD4E7B01DBF301400F17023 /* JPPicPickerViewCell.xib */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -520,8 +541,10 @@
 			files = (
 				4A44FFBA1DAB631C006B00C7 /* LaunchScreen.storyboard in Resources */,
 				4A44001C1DAB85BE006B00C7 /* JPDiscover.storyboard in Resources */,
+				4A09CD961DBDFBBD0039F031 /* JPComposeViewController.xib in Resources */,
 				4A44FFB71DAB631C006B00C7 /* Assets.xcassets in Resources */,
 				4A44FFE21DAB6344006B00C7 /* MainVCSettings.json in Resources */,
+				4AD4E7B21DBF301400F17023 /* JPPicPickerViewCell.xib in Resources */,
 				4A00A1201DACDD2500F3E4A4 /* JPModalViewController.xib in Resources */,
 				4A4400111DAB8000006B00C7 /* JPHome.storyboard in Resources */,
 				4AE505561DAC7C7400CBBB41 /* JPVisitorView.xib in Resources */,
@@ -591,16 +614,20 @@
 				4AA795981DB0BBBA005CCFBC /* JPOAuthViewController.swift in Sources */,
 				4A5C74801DB748EA00ACFAB8 /* DateExtension.swift in Sources */,
 				4A44FFE61DAB6357006B00C7 /* AppDelegate.swift in Sources */,
+				4AD4E7B11DBF301400F17023 /* JPPicPickerViewCell.swift in Sources */,
 				4A02B1101DAF5FCF0068B342 /* JPHTTPRequestTool.swift in Sources */,
 				4AFCC5B31DACF20100531F8F /* JPAnimationor.swift in Sources */,
 				4AE505521DAC7BE000CBBB41 /* JPBaseViewController.swift in Sources */,
 				4A5B6EF21DB4A8BE008872DC /* JPUserAccount.swift in Sources */,
+				4A09CD951DBDFBBD0039F031 /* JPComposeViewController.swift in Sources */,
 				4A6E7C8A1DACCC9100F330F8 /* JPTitleButton.swift in Sources */,
 				4A44FFDF1DAB6344006B00C7 /* JPDiscoverViewController.swift in Sources */,
 				4A00A1221DACE05800F3E4A4 /* JPPresentationController.swift in Sources */,
 				4AA7959D1DB0C6EB005CCFBC /* JPGlobalTool.swift in Sources */,
+				4AD4E7B41DBF3E6A00F17023 /* JPPicPickerViewController.swift in Sources */,
 				4A00A11F1DACDD2500F3E4A4 /* JPModalViewController.swift in Sources */,
 				4A5C74781DB70E5A00ACFAB8 /* JPStatusModal.swift in Sources */,
+				4A09CD9A1DBE06670039F031 /* JPComposeTextView.swift in Sources */,
 				4A6E7C8C1DACD62800F330F8 /* UiBarButtonItem.swift in Sources */,
 				4A44FFE01DAB6344006B00C7 /* JPHomeViewController.swift in Sources */,
 				4AF6CAFD1DB859E300DC7AEE /* JPPicCollectionView.swift in Sources */,
@@ -611,6 +638,7 @@
 				4A44FFE11DAB6344006B00C7 /* JPMainViewController.swift in Sources */,
 				4AE505541DAC7C6800CBBB41 /* JPVisitorView.swift in Sources */,
 				4AE5054F1DAC77EF00CBBB41 /* UIButtonExtension.swift in Sources */,
+				4A09CD981DBDFFBF0039F031 /* JPComposeTitleView.swift in Sources */,
 				4A2DB1621DB60BAB00C54019 /* JPuserAccountViewModel.swift in Sources */,
 				4A44FFE41DAB6344006B00C7 /* JPProfileViewController.swift in Sources */,
 				4A2DB1661DB615D200C54019 /* JPWelcomeViewController.swift in Sources */,
@@ -690,6 +718,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -712,7 +741,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -739,6 +768,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -755,7 +785,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
@@ -767,6 +797,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = B7FD2A15E1C410C3004962FF /* Pods-JPWB.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				DEVELOPMENT_TEAM = 5J32R9MXM2;
@@ -783,6 +814,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = C095449173D69AB137ED9256 /* Pods-JPWB.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				DEVELOPMENT_TEAM = 5J32R9MXM2;

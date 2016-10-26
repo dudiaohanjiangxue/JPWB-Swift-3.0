@@ -207,9 +207,11 @@ extension JPHomeViewController {
         for statusViewModal in statuses {
             for imageUrl in statusViewModal.picURLs {
                 group.enter()
-                KingfisherManager.shared.retrieveImage(with: imageUrl, options: nil, progressBlock: nil, completionHandler: nil)
-                group.leave()
+                KingfisherManager.shared.retrieveImage(with: imageUrl, options: [], progressBlock: nil, completionHandler: { (_, _, _, _) in
+                    group.leave()
+                })
             }
+            
         }
         
         group.notify(queue: DispatchQueue.main) { 

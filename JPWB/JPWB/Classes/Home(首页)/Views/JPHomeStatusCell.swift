@@ -91,6 +91,7 @@ extension JPHomeStatusCell {
     func cellHeight(statusViewModal: JPStatusViewModel) -> CGFloat {
         self.statusViewModal = statusViewModal
         self.layoutIfNeeded()
+        JPPrint(bottomView.frame.maxY)
         return bottomView.frame.maxY
     }
   

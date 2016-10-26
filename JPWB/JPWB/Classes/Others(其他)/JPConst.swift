@@ -15,10 +15,19 @@ struct OAuthInfo {
    
 }
 
+//MARK: - 接口
 struct JPRequestURLString {
+    /**获取access_token*/
     static let access_token = "https://api.weibo.com/oauth2/access_token"
+    /**获取用户信息*/
     static let userInfo = "https://api.weibo.com/2/users/show.json"
+    /**获取用户的微博*/
     static let userStatuses = "https://api.weibo.com/2/statuses/home_timeline.json"
+    /**发布文字微博*/
+    static let composeTextStatus = "https://api.weibo.com/2/statuses/update.json"
+    /**发布图片微博*/
+    static let composeImageStatus = "https://api.weibo.com/2/statuses/upload.json"
+    
 }
 
 struct JPHomeConst {
