@@ -62,6 +62,7 @@ extension JPPicCollectionView: UICollectionViewDataSource, UICollectionViewDeleg
 
 }
 
+
 //MARK: - 自定义的方法
 extension JPPicCollectionView {
     fileprivate func calculatePicCollectionSize(count: Int) -> (CGFloat, CGFloat) {

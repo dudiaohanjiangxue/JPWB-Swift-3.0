@@ -21,7 +21,6 @@ class JPHTTPRequestTool: NSObject {
         method: HTTPMethod = .post,
         parameters: Parameters? = nil,
         finished: @escaping finisedCallBack) {
-        
         let paraneterEncoding = URLEncoding.default
         ///默认的请求方式
         Alamofire.request(url, method: method, parameters: parameters, encoding: paraneterEncoding, headers: nil).responseJSON { (dataRespose: DataResponse<Any>) in

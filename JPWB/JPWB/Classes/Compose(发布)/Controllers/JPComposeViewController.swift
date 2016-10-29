@@ -18,9 +18,15 @@ class JPComposeViewController: UIViewController {
     @IBOutlet weak var toolBar: UIToolbar!
     /**工具条的底部约束*/
     @IBOutlet weak var toolViewBottomConst: NSLayoutConstraint!
-    
+    /**选择图片控制器*/
     lazy var picpickerVc: JPPicPickerViewController = JPPicPickerViewController(collectionViewLayout: JPPicpickerViewLayout())
-    
+    /**表情emoji的控制器*/
+    lazy var emoticonVC: EmoticonViewController = EmoticonViewController {[weak self] (emoticon) in
+        //1.插入表情
+        self!.coustomTextView.insertEmoticon(emoticon: emoticon)
+        //2.手动调用文字改变的代理方法
+        self!.textViewDidChange(self!.coustomTextView)
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -95,7 +101,7 @@ extension JPComposeViewController: NVActivityIndicatorViewable {
     @objc fileprivate func sureCompose() {
         self.startAnimating(nil, message: "正在发布...", type: .ballSpinFadeLoader, color: .green, padding: nil, displayTimeThreshold: nil, minimumDisplayTime: nil)
         
-      let text = coustomTextView.text ?? ""
+      let text = coustomTextView.getEmoticonString()
         let image = picpickerVc.images.first
         if image != nil {
             
@@ -106,6 +112,7 @@ extension JPComposeViewController: NVActivityIndicatorViewable {
                     JPPrint("发布失败")
                 }
                 self.stopAnimating()
+                self.dismiss(animated: true, completion: nil)
             })
         }else {
         
@@ -116,9 +123,10 @@ extension JPComposeViewController: NVActivityIndicatorViewable {
                     JPPrint("发布失败")
                 }
                 self.stopAnimating()
+                self.dismiss(animated: true, completion: nil)
             }
         }
-      dismiss(animated: true, completion: nil)
+      
     }
     
     ///键盘的frame即将改变
@@ -153,6 +161,18 @@ extension JPComposeViewController: NVActivityIndicatorViewable {
         }
         
     }
+    
+    @IBAction func emoticonBtnClick() {
+        //1.先退出键盘
+        coustomTextView.resignFirstResponder()
+        //2.切换键盘
+        coustomTextView.inputView = coustomTextView.inputView == nil ? emoticonVC.view : nil
+        //3.弹出键盘
+        coustomTextView.becomeFirstResponder()
+        
+    }
+    
+    
 }
 //MARK: - textView的代理方法
 extension JPComposeViewController: UITextViewDelegate{

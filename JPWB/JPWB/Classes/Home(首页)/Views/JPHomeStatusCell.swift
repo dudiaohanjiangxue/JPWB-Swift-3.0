@@ -19,8 +19,8 @@ class JPHomeStatusCell: UITableViewCell {
     @IBOutlet weak var vipView: UIImageView!
     @IBOutlet weak var timeLabel: UILabel!
     @IBOutlet weak var sourceLabel: UILabel!
-    @IBOutlet weak var contentLabel: UILabel!
-    @IBOutlet weak var reweeted_statusContent: UILabel!
+    @IBOutlet weak var contentLabel: HYLabel!
+    @IBOutlet weak var reweeted_statusContent: HYLabel!
     @IBOutlet weak var pic_collectionView: JPPicCollectionView!
     @IBOutlet weak var bottomView: UIView!
     
@@ -43,12 +43,20 @@ class JPHomeStatusCell: UITableViewCell {
             nameLabel.text = statusViewModal.status?.user?.screen_name
             timeLabel.text = statusViewModal.createdAtString
             sourceLabel.text = statusViewModal.sourceText
-            contentLabel.text = statusViewModal.status?.text
+            contentLabel.attributedText = FindEmoticonString.shared.findEmoticonString(text: statusViewModal.status?.text ?? "", fontHeight: contentLabel.font.lineHeight)
             
             
             if  statusViewModal.status?.retweeted_status != nil {
                 
-                reweeted_statusContent.text = "@" + (statusViewModal.status?.retweeted_status?.user?.screen_name)! + ":" + (statusViewModal.status?.retweeted_status?.text ?? "")
+                if let screenName = statusViewModal.status?.retweeted_status?.user?.screen_name {
+                    let retweetedContentText = "@" + screenName + ":" + (statusViewModal.status?.retweeted_status?.text ?? "")
+                    reweeted_statusContent.attributedText = FindEmoticonString.shared.findEmoticonString(text: retweetedContentText, fontHeight: reweeted_statusContent.font.lineHeight)
+                }else {
+                        reweeted_statusContent.text = statusViewModal.status?.retweeted_status?.text ?? ""
+                }
+                
+                
+                
                 reweeted_statusCntentLabelTopConst.constant = 15
                 reweeted_statusContent.isHidden = false
             }else {
@@ -73,15 +81,29 @@ class JPHomeStatusCell: UITableViewCell {
         super.awakeFromNib()
         contentLabelWidthConst.constant = UIScreen.main.bounds.width - 2 * JPHomeConst.edgeMargin
         reweeted_statusComtentLabelConst.constant = UIScreen.main.bounds.width - 2 * JPHomeConst.edgeMargin
+        //监听@谁谁谁的点击
+        contentLabel.userTapHandler = {(label, user, range) in
+            print(label)
+            print(user)
+            print(range)
+        }
+        //监听链接的点击
+        contentLabel.linkTapHandler = { (label, link, range) in
+        
+            print(label)
+            print(link)
+            print(range)
+        }
+        
+        // 监听话题的点击
+        contentLabel.topicTapHandler = { (label, topic, range) in
+            print(label)
+            print(topic)
+            print(range)
+        }
     }
     
-//    override var frame: CGRect{
-//        didSet{
-//            frame.size.height = frame.size.height - 10
-//            
-//        }
-//    
-//    }
+   
 
     
 }
