@@ -38,6 +38,7 @@
 		4A5C747C1DB7231100ACFAB8 /* JPUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A5C747B1DB7231100ACFAB8 /* JPUser.swift */; };
 		4A5C74801DB748EA00ACFAB8 /* DateExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A5C747F1DB748EA00ACFAB8 /* DateExtension.swift */; };
 		4A5C74821DB7549F00ACFAB8 /* JPStatusViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A5C74811DB7549F00ACFAB8 /* JPStatusViewModel.swift */; };
+		4A6CF5431DC722B000FBE2BA /* JPPhotoBrowserAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A6CF5421DC722B000FBE2BA /* JPPhotoBrowserAnimator.swift */; };
 		4A6E7C8A1DACCC9100F330F8 /* JPTitleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A6E7C891DACCC9100F330F8 /* JPTitleButton.swift */; };
 		4A6E7C8C1DACD62800F330F8 /* UiBarButtonItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A6E7C8B1DACD62800F330F8 /* UiBarButtonItem.swift */; };
 		4A8B3B551DC437BA00F3B4A8 /* EmoticonAttachment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A8B3B4C1DC437BA00F3B4A8 /* EmoticonAttachment.swift */; };
@@ -50,6 +51,9 @@
 		4A8B3B5C1DC437BA00F3B4A8 /* UITextView-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A8B3B541DC437BA00F3B4A8 /* UITextView-Extension.swift */; };
 		4A8B3B621DC46FF700F3B4A8 /* FindEmoticonString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A8B3B611DC46FF700F3B4A8 /* FindEmoticonString.swift */; };
 		4A8B3B641DC4798F00F3B4A8 /* HYLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A8B3B631DC4798F00F3B4A8 /* HYLabel.swift */; };
+		4A8B3B671DC48A5200F3B4A8 /* JPPhotoBrowserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A8B3B661DC48A5200F3B4A8 /* JPPhotoBrowserViewController.swift */; };
+		4A8B3B691DC49F6800F3B4A8 /* JPPhotoBrowserViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A8B3B681DC49F6800F3B4A8 /* JPPhotoBrowserViewCell.swift */; };
+		4A8B3B6B1DC6DD5100F3B4A8 /* JPPhotoBrowserProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A8B3B6A1DC6DD5100F3B4A8 /* JPPhotoBrowserProgressView.swift */; };
 		4AA795981DB0BBBA005CCFBC /* JPOAuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AA795961DB0BBBA005CCFBC /* JPOAuthViewController.swift */; };
 		4AA7959B1DB0C5E2005CCFBC /* JPConst.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AA7959A1DB0C5E2005CCFBC /* JPConst.swift */; };
 		4AA7959D1DB0C6EB005CCFBC /* JPGlobalTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AA7959C1DB0C6EB005CCFBC /* JPGlobalTool.swift */; };
@@ -101,6 +105,7 @@
 		4A5C747B1DB7231100ACFAB8 /* JPUser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JPUser.swift; sourceTree = "<group>"; };
 		4A5C747F1DB748EA00ACFAB8 /* DateExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateExtension.swift; sourceTree = "<group>"; };
 		4A5C74811DB7549F00ACFAB8 /* JPStatusViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JPStatusViewModel.swift; sourceTree = "<group>"; };
+		4A6CF5421DC722B000FBE2BA /* JPPhotoBrowserAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JPPhotoBrowserAnimator.swift; sourceTree = "<group>"; };
 		4A6E7C891DACCC9100F330F8 /* JPTitleButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JPTitleButton.swift; sourceTree = "<group>"; };
 		4A6E7C8B1DACD62800F330F8 /* UiBarButtonItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UiBarButtonItem.swift; sourceTree = "<group>"; };
 		4A8B3B4C1DC437BA00F3B4A8 /* EmoticonAttachment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmoticonAttachment.swift; sourceTree = "<group>"; };
@@ -113,6 +118,9 @@
 		4A8B3B541DC437BA00F3B4A8 /* UITextView-Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITextView-Extension.swift"; sourceTree = "<group>"; };
 		4A8B3B611DC46FF700F3B4A8 /* FindEmoticonString.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FindEmoticonString.swift; sourceTree = "<group>"; };
 		4A8B3B631DC4798F00F3B4A8 /* HYLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HYLabel.swift; sourceTree = "<group>"; };
+		4A8B3B661DC48A5200F3B4A8 /* JPPhotoBrowserViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JPPhotoBrowserViewController.swift; sourceTree = "<group>"; };
+		4A8B3B681DC49F6800F3B4A8 /* JPPhotoBrowserViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JPPhotoBrowserViewCell.swift; sourceTree = "<group>"; };
+		4A8B3B6A1DC6DD5100F3B4A8 /* JPPhotoBrowserProgressView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JPPhotoBrowserProgressView.swift; sourceTree = "<group>"; };
 		4AA795961DB0BBBA005CCFBC /* JPOAuthViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JPOAuthViewController.swift; sourceTree = "<group>"; };
 		4AA7959A1DB0C5E2005CCFBC /* JPConst.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JPConst.swift; sourceTree = "<group>"; };
 		4AA7959C1DB0C6EB005CCFBC /* JPGlobalTool.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JPGlobalTool.swift; sourceTree = "<group>"; };
@@ -313,6 +321,7 @@
 			isa = PBXGroup;
 			children = (
 				4A00A11C1DACDCFA00F3E4A4 /* UIPopover */,
+				4A8B3B651DC48A2600F3B4A8 /* PhotoBrowser */,
 				4A44FFC91DAB6344006B00C7 /* Controllers */,
 				4A44FFCB1DAB6344006B00C7 /* Models */,
 				4A44FFCC1DAB6344006B00C7 /* Views */,
@@ -494,6 +503,17 @@
 			path = Modle;
 			sourceTree = "<group>";
 		};
+		4A8B3B651DC48A2600F3B4A8 /* PhotoBrowser */ = {
+			isa = PBXGroup;
+			children = (
+				4A8B3B661DC48A5200F3B4A8 /* JPPhotoBrowserViewController.swift */,
+				4A8B3B681DC49F6800F3B4A8 /* JPPhotoBrowserViewCell.swift */,
+				4A8B3B6A1DC6DD5100F3B4A8 /* JPPhotoBrowserProgressView.swift */,
+				4A6CF5421DC722B000FBE2BA /* JPPhotoBrowserAnimator.swift */,
+			);
+			path = PhotoBrowser;
+			sourceTree = "<group>";
+		};
 		4AA795951DB0BB9D005CCFBC /* OAuth */ = {
 			isa = PBXGroup;
 			children = (
@@ -662,11 +682,13 @@
 				4A5C74801DB748EA00ACFAB8 /* DateExtension.swift in Sources */,
 				4A44FFE61DAB6357006B00C7 /* AppDelegate.swift in Sources */,
 				4AD4E7B11DBF301400F17023 /* JPPicPickerViewCell.swift in Sources */,
+				4A8B3B671DC48A5200F3B4A8 /* JPPhotoBrowserViewController.swift in Sources */,
 				4A02B1101DAF5FCF0068B342 /* JPHTTPRequestTool.swift in Sources */,
 				4A8B3B5A1DC437BA00F3B4A8 /* EmoticonPackage.swift in Sources */,
 				4AFCC5B31DACF20100531F8F /* JPAnimationor.swift in Sources */,
 				4A8B3B561DC437BA00F3B4A8 /* EmoticonViewCell.swift in Sources */,
 				4AE505521DAC7BE000CBBB41 /* JPBaseViewController.swift in Sources */,
+				4A8B3B6B1DC6DD5100F3B4A8 /* JPPhotoBrowserProgressView.swift in Sources */,
 				4A8B3B621DC46FF700F3B4A8 /* FindEmoticonString.swift in Sources */,
 				4A5B6EF21DB4A8BE008872DC /* JPUserAccount.swift in Sources */,
 				4A8B3B551DC437BA00F3B4A8 /* EmoticonAttachment.swift in Sources */,
@@ -677,8 +699,10 @@
 				4AA7959D1DB0C6EB005CCFBC /* JPGlobalTool.swift in Sources */,
 				4A8B3B571DC437BA00F3B4A8 /* EmoticonViewController.swift in Sources */,
 				4A8B3B5C1DC437BA00F3B4A8 /* UITextView-Extension.swift in Sources */,
+				4A6CF5431DC722B000FBE2BA /* JPPhotoBrowserAnimator.swift in Sources */,
 				4AD4E7B41DBF3E6A00F17023 /* JPPicPickerViewController.swift in Sources */,
 				4A00A11F1DACDD2500F3E4A4 /* JPModalViewController.swift in Sources */,
+				4A8B3B691DC49F6800F3B4A8 /* JPPhotoBrowserViewCell.swift in Sources */,
 				4A5C74781DB70E5A00ACFAB8 /* JPStatusModal.swift in Sources */,
 				4A09CD9A1DBE06670039F031 /* JPComposeTextView.swift in Sources */,
 				4A6E7C8C1DACD62800F330F8 /* UiBarButtonItem.swift in Sources */,

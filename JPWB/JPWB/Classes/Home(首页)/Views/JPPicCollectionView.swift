@@ -43,7 +43,7 @@ class JPPicCollectionView: UICollectionView {
 
 //MARK: - UICollectionViewDataSource
 
-extension JPPicCollectionView: UICollectionViewDataSource, UICollectionViewDelegate {
+extension JPPicCollectionView: UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return picUrls.count
     }
@@ -62,6 +62,17 @@ extension JPPicCollectionView: UICollectionViewDataSource, UICollectionViewDeleg
 
 }
 
+//MARK: - UICollectionViewDelegate
+extension JPPicCollectionView: UICollectionViewDelegate {
+
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        //要传出去的信息
+        let userinfo = [PhotoBrowserVcNote.showPhotoBrowserVcNoteIndex: indexPath, PhotoBrowserVcNote.showPhotoBrowserVcNotePicURLs: picUrls] as [String : Any]
+        //发送通知
+        NotificationCenter.default.post(name: NSNotification.Name(rawValue: PhotoBrowserVcNote.name), object: self, userInfo: userinfo)
+        
+    }
+}
 
 //MARK: - 自定义的方法
 extension JPPicCollectionView {
@@ -119,6 +130,47 @@ extension JPPicCollectionView {
         
         
         
+    }
+
+}
+
+extension JPPicCollectionView : JPPhotoBrowserPresentedDelegate {
+
+    func startRectForPresentedView(indexPath: IndexPath) -> CGRect? {
+        let cell = cellForItem(at: indexPath)!
+        let startFrame = self.convert(cell.frame, to: UIApplication.shared.keyWindow)
+        return startFrame
+    }
+    
+    
+    func endRectForPresentedView(indexPath: IndexPath) -> CGRect? {
+        //1.取出indexPath对应的图片
+        let picURL = picUrls[indexPath.item]
+        guard let image =  KingfisherManager.shared.cache.retrieveImageInDiskCache(forKey: picURL.absoluteString) else {
+            JPPrint("取不出相片")
+            return nil
+        }
+        let width = UIScreen.main.bounds.width
+        let height = width * image.size.height / image.size.width
+        let x : CGFloat = 0
+        var y : CGFloat = (UIScreen.main.bounds.height - height) * 0.5
+        y = y < 0 ? 0 : y
+        return CGRect(x: x, y: y, width: width, height: height)
+        
+    }
+    
+    func imageViewForPresentedView(indexPath: IndexPath) -> UIImageView? {
+        let imageView = UIImageView()
+        let picURL = picUrls[indexPath.item]
+        guard let image =  KingfisherManager.shared.cache.retrieveImageInDiskCache(forKey: picURL.absoluteString) else {
+            JPPrint("取不出相片")
+            return nil
+        }
+        imageView.image = image
+        imageView.contentMode = .scaleAspectFill
+        imageView.clipsToBounds = true
+        
+        return imageView
     }
 
 }

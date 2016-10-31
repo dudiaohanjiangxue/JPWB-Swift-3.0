@@ -36,3 +36,13 @@ struct JPHomeConst {
     static let pading: CGFloat = 10
 
 }
+
+
+struct PhotoBrowserVcNote {
+    //通知的名字
+     static let name = "showPhotoBrowserVcNote"
+    ///通知点击图片的序号
+     static let showPhotoBrowserVcNoteIndex = "showPhotoBrowserVcNoteIndex"
+    /**通知该条微博图片的所有urls*/
+     static let showPhotoBrowserVcNotePicURLs = "showPhotoBrowserVcNotePicURLs"
+}

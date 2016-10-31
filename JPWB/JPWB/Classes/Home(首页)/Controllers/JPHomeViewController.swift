@@ -26,7 +26,10 @@ class JPHomeViewController: JPBaseViewController {
     }()
     
     //MARK: - 属性
+    //标题的动画
    fileprivate lazy var animationor : JPAnimationor = JPAnimationor()
+    //图片浏览的动画
+    fileprivate lazy var photoBrowserAnimationor: JPPhotoBrowserAnimator = JPPhotoBrowserAnimator()
     ///数据源
    fileprivate lazy var statuses: [JPStatusViewModel] = [JPStatusViewModel]()
     ///cell的高度
@@ -48,7 +51,8 @@ class JPHomeViewController: JPBaseViewController {
         //3.下拉刷新功能
         setupRefreshHeaderView()
         
-        
+        //4.接受点击图片,打开图片浏览器的通知
+        NotificationCenter.default.addObserver(self, selector: #selector(showPhotoBrowser(note:)), name: NSNotification.Name(rawValue: PhotoBrowserVcNote.name), object: nil)
         
     }
 
@@ -123,6 +127,7 @@ extension JPHomeViewController {
         
     }
     
+    ///中间的标题点击事件
     @objc fileprivate func titleBtnClick(titleBtn : JPTitleButton) {
 //        titleBtn.isSelected = !titleBtn.isSelected
         //弹出
@@ -138,6 +143,23 @@ extension JPHomeViewController {
         modalVC.transitioningDelegate = animationor
         
         self.present(modalVC, animated: true, completion: nil)
+    }
+    
+    //接收到打开图片浏览器的通知事件
+    @objc fileprivate func showPhotoBrowser(note: Notification) {
+    //1. 取出点击图片索引和所有图片的urls
+        guard  let indexPath = note.userInfo![PhotoBrowserVcNote.showPhotoBrowserVcNoteIndex] as? IndexPath, let urls = note.userInfo![PhotoBrowserVcNote.showPhotoBrowserVcNotePicURLs] as? [URL], let obj = note.object as? JPPicCollectionView else {
+            return
+        }
+        
+        //2.创建图片浏览控制器
+        let photoBrowserVC = JPPhotoBrowserViewController(indexPath: indexPath, picURLs: urls)
+        photoBrowserVC.modalPresentationStyle = .custom
+        photoBrowserVC.transitioningDelegate = photoBrowserAnimationor
+        photoBrowserAnimationor.presentedDelegate = obj
+        photoBrowserAnimationor.dismissDelegate = photoBrowserVC
+        photoBrowserAnimationor.indexPath = indexPath
+        present(photoBrowserVC, animated:true, completion: nil)
     }
 }
 
@@ -261,6 +283,8 @@ extension JPHomeViewController {
     }
     
 }
+
+ 
 
 //MARK: - 自定义方法
 extension JPHomeViewController {

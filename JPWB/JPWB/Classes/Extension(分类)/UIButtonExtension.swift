@@ -21,6 +21,14 @@ extension UIButton {
         sizeToFit()
     }
     
+    convenience init(title: String, bgColor: UIColor, fontSize: CGFloat) {
+        self.init()
+        
+        self.setTitle(title, for: .normal)
+        self.backgroundColor = bgColor
+        titleLabel?.font = UIFont.systemFont(ofSize: fontSize)
+    }
+    
     ///类方法
     class func crateBtn(imageName: String, bgImageName: String) -> UIButton {
         let btn = UIButton(type: .custom)
